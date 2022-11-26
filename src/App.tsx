@@ -1,8 +1,13 @@
+import { Home } from "./components/pages/Home"
+import { NavBar } from "./components/NavBar/Nav"
 
-function App() {
+
+export function App() {
 
   return (
-    <h1>hello willianglitch</h1>
+    <div>
+      <NavBar />
+    </div>
   )
 }
 
