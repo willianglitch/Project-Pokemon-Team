@@ -8,26 +8,13 @@ import Typography from '@mui/material/Typography';
 
 export function PokemonCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
+    <Card sx={{ width:'250px', height:'250px', borderRadius:'50%' ,border:'solid 4px #363636', display:'flex', alignItems:'center', justifyContent:'center',position:'relative'}}>
+      <CardMedia 
         component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
+        height="240"
+        image="./public/assets/Mabosstiff.png"
+        alt="Pokemon Mabosstiff"
       />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
 }
